@@ -1,0 +1,25 @@
+Git bash na carpeta que queiramos usar de repositorio
+git init (creamos repositorio)
+Creamos un archivo "probandoGit.txt" dentro
+git status (danos info do repositorio, cambios, commits etc)
+Neste caso sale que estamos no master, sin commits e que o archivo creado está "Untracked"
+git add probandoGit.txt (pasamos o archivo a staged), git add . (añade todos)
+Con git status vemos que xa aparece staged e preparado para poder commit
+git commit -m "mensaxe que queiras" (fai commit de todo o preparado e pon a descripción)
+Con git status vemos que xa non hai nada no working tree, xa que fixemos commit de todo o preparado
+git config –global user.email "email@email" (garda o email do usuario de git para mostralo)
+git config –global user.name "nome" (garda o nome do usuario de git para mostralo)
+echo "*.extensión" > .gitignore (crea un archivo gitignore que ten dentro a extensión que non queres trackear)
+Con git status vemos que xa non aparecen os archivos con esa extensión en Git, xa que os ignora
+git difftool (permite ver os cambios actuais nos archivos)
+git mv actual.ext novonome.ext (cambiar nome dun archivo)
+git rm -f archivo.ext (elimina o archivo)
+git push (manda os cambios a github. require github desktop?ou repositorio asociado?)
+git log (mostra o historial de commits)
+git checkout HEAD -- . (restaura os cambios e carga dende o último commit. Non vale se xa fixeras commit)
+git branch novaRama ramaActual  (crea un branch a partir da indicada)
+git checkout novaRama (cambia e usa a rama nova)
+git branch (ver ramas)
+git merge rama master (fai merge da rama hacia master)
+git pull origin master (actualiza o repositorio local desde o remoto)
+git diff (mostra os cambios entre a área de traballo actual co repositorio, NON conta  a area stage)
